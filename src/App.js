@@ -5,6 +5,7 @@ import './App.css';
 
 import AddToDo from "./AddTodo";
 import ListToDoV2 from './ListToDoV2.js';
+import HeaderFile from './HeaderFile';
 
 // Setup a couple vars for the API. Not the best way but works for this example
 const todoListEndpoint = "http://localhost:3001/api/todos/";
@@ -93,8 +94,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-               <HeaderFile/>
+
                 <div>
+                    <HeaderFile/>
+
                     <AddToDo clicked={this.clickAdd}/>
                 </div>
                 <div>
